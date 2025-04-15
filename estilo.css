@@ -1,0 +1,21 @@
+html, body{
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+}
+
+footer{
+    
+    height: 10%;
+    width: 100%;
+    border: 10px solid white;
+    text-align: center;
+    padding: 1px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+
+#MenuSobre{
+    display: none;
+}
