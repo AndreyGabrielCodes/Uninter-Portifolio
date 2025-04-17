@@ -3,6 +3,8 @@
     --cor-elementos: #ffffff;
     --cor-hover-botao: #d1cecd;
     --cor-texto: #000000;
+    --cor-box-shadow: #000000;
+    --cor-tamanho-shadow: 2px 2px 2px;
 }
 
 html, body{
@@ -11,16 +13,18 @@ html, body{
     margin-left: auto;
     margin-right: auto;
     background-color:var(--cor-fundo);
+    font-size: 1.1em;
 }
 
     body > header, section, footer {
         background-color: var(--cor-elementos);
-        padding: 5px 3% 5px 3%;
+        padding:  5px 3% 5px 3%;
         margin: 1.5%;
         border-radius: 10px;
         box-sizing: border-box;
         text-align: justify;
         color: var(--cor-texto);
+        box-shadow: var(--cor-tamanho-shadow) var(--cor-box-shadow);
     }
 
     body > header, a, section, footer{
@@ -29,26 +33,48 @@ html, body{
 
 header{
     text-align: left !important;
+    padding: 0 !important;
+    position: relative;
 }
 
-    header > span{
-        display: flex;
-        justify-content: space-between;
+    header > #PositionFotoAndrey{
+        z-index: 10;
+        margin: 8% 0 0 2%;
+        position: absolute;
     }
 
-    header > span > img{
+    header #FotoAndrey{
+        width: 70%;
+        transition: ease-in-out 300ms;
+    }
+
+    header #Wallpaper{
+        border-radius: 10px 10px 0 0;
+    }    
+
+    header #InfoHeader {
+        padding: 2% 3% 3% 3%;
+    }
+
+    header > #InfoHeader > div{
+        margin-top: 8px;
+    }
+
+    #NomeDestaque{
+        margin-top: 40px;
+        font-size: 200%;
+        font-weight: bold;
+    }
+
+    header #AlterarModo{
         cursor: pointer;
-        margin-top: 1.5%;
-        max-width: 35px;
-        max-height: 35px;
+        float: right;
+        max-width: 40px;
+        max-height: 40px;
         transition: ease 300ms !important;
     }
 
-    header > span > img:hover{
-        max-width: 40px;
-        max-height: 40px; 
-        transition: ease 300ms !important;
-    }
+    
 
 nav {
     display: flex;
@@ -67,10 +93,76 @@ a, a:visited{
         color: var(--cor-texto);
 }
 
-
-@media only screen and (min-width: 750px){ 
+@media only screen and (max-width: 750px){
+    header #FotoAndrey{
+        width: 60%;
+    }
     body {
-        font-size: 1.05em;
+        font-size: 1em;
+    }
+    header #AlterarModo{
+        max-width: 35px;
+        max-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    header #FotoAndrey{
+        width: 55%;
+    }
+    body {
+        font-size: 0.9em;
+    }
+    header #AlterarModo{
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    header #FotoAndrey{
+        width: 45%;
+    }
+    body {
+        font-size: 0.7em;
+    }
+    header #AlterarModo{
+        max-width: 27px;
+        max-height: 27px;
+    }
+}
+
+
+@media only screen and (max-width: 450px){ 
+    header #FotoAndrey{
+        width: 36%;
+    }
+    body {
+        font-size: 0.8em;
+    }
+    header #AlterarModo{
+        max-width: 25px;
+        max-height: 25px;
+    }
+}
+
+/*Aplica o hover apenas a dispositivos com capacidade ao hover*/
+@media (hover: hover){
+
+    header #AlterarModo:hover{
+        max-width: 40px;
+        max-height: 40px; 
+        transition: ease 300ms !important;
+    }
+
+    #MenuVoltar > a:hover{
+        width: 33%;
+    }
+
+    .Botao:hover{
+        background-color: var(--cor-hover-botao);
+        transition: ease-in-out 400ms !important;
+        width: 130%;
     }
 }
 
@@ -84,13 +176,8 @@ a, a:visited{
     align-items: center;
     border-radius: 10px;
     transition: ease-in-out 400ms !important;
+    box-shadow: var(--cor-tamanho-shadow) var(--cor-box-shadow);
 }
-
-    .Botao:hover{
-        background-color: var(--cor-hover-botao);
-        transition: ease-in-out 400ms !important;
-        width: 130%;
-    }
 
 #MenuVoltar{
     display: flex;
@@ -99,5 +186,9 @@ a, a:visited{
 }
 
     #MenuVoltar > a{
-        width: 150px;
+        width: 30%;
     }
+
+#Wallpaper{
+    width: 100% 
+}

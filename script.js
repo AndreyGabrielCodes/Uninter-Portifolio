@@ -16,6 +16,7 @@ function AlterarModo(){
         root.style.setProperty('--cor-elementos', '#262626');
         root.style.setProperty('--cor-hover-botao','#6c6b6b');
         root.style.setProperty('--cor-texto','#ffffff');
+        root.style.setProperty('--cor-box-shadow','#ffffff');
         alterarModo.src = 'images/lightModeIcon.png';
         alterarModo.title = 'Clique para alterar para o modo claro';
         modoClaro = false;
@@ -24,6 +25,7 @@ function AlterarModo(){
         root.style.setProperty('--cor-elementos','#ffffff');
         root.style.setProperty('--cor-hover-botao','#d1cecd');
         root.style.setProperty('--cor-texto','#000000');
+        root.style.setProperty('--cor-box-shadow','000000');
         alterarModo.src = 'images/darkModeIcon.png';
         alterarModo.title = 'Clique para alterar para o modo escuro';
         modoClaro = true;
