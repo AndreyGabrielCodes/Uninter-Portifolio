@@ -20,11 +20,11 @@ html, body{
         border-radius: 10px;
         box-sizing: border-box;
         text-align: justify;
-        transition: ease-in-out 500ms;
+        color: var(--cor-texto);
     }
 
-    body > *{
-        color: var(--cor-texto);
+    body > header, a, section, footer{
+        transition: ease-in-out 700ms;
     }
 
 header{
@@ -41,7 +41,20 @@ header{
         margin-top: 1.5%;
         max-width: 35px;
         max-height: 35px;
+        transition: ease 300ms !important;
     }
+
+    header > span > img:hover{
+        max-width: 40px;
+        max-height: 40px; 
+        transition: ease 300ms !important;
+    }
+
+nav {
+    display: flex;
+    margin: 0 1.5% 0 1.5%;
+    gap: 1.5%;
+}
 
 footer{
     height: 5%;
@@ -49,10 +62,9 @@ footer{
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-    margin: 0 1.5% 0 1.5%;
-    gap: 1.5%;
+a, a:visited{
+        text-decoration: none;
+        color: var(--cor-texto);
 }
 
 
@@ -71,19 +83,19 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: ease-in-out 400ms !important;
 }
 
     .Botao:hover{
         background-color: var(--cor-hover-botao);
+        transition: ease-in-out 400ms !important;
+        width: 130%;
     }
 
 #MenuVoltar{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
-    
 }
 
     #MenuVoltar > a{
