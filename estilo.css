@@ -1,23 +1,47 @@
+:root{
+    --cor-fundo: #e7e4e3;
+    --cor-elementos: #ffffff;
+    --cor-hover-botao: #d1cecd;
+    --cor-texto: #000000;
+}
+
 html, body{
     font-family: 'Segoe UI', sans-serif;
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #e7e4e3;
+    background-color:var(--cor-fundo);
 }
 
     body > header, section, footer {
-        background-color: #ffffff;
+        background-color: var(--cor-elementos);
         padding: 5px 3% 5px 3%;
         margin: 1.5%;
         border-radius: 10px;
         box-sizing: border-box;
         text-align: justify;
+        transition: ease-in-out 500ms;
+    }
+
+    body > *{
+        color: var(--cor-texto);
     }
 
 header{
     text-align: left !important;
 }
+
+    header > span{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header > span > img{
+        cursor: pointer;
+        margin-top: 1.5%;
+        max-width: 35px;
+        max-height: 35px;
+    }
 
 footer{
     height: 5%;
@@ -40,7 +64,7 @@ nav {
 
 .Botao{
     display: flex;
-    background-color: #ffffff;
+    background-color: var(--cor-elementos);
     width: 120%;
     height: 40px;
     font-weight: bold;
@@ -50,7 +74,7 @@ nav {
 }
 
     .Botao:hover{
-        background-color: #d1cecd;
+        background-color: var(--cor-hover-botao);
     }
 
 #MenuVoltar{
