@@ -3,15 +3,12 @@ const alterarModo = document.getElementById("AlterarModo");
 let modoClaro = true;
 let modoSalvo = localStorage.getItem('modoClaro');
 
-//Aplica o ultimo modo salvo ao carregar a página
-if (modoSalvo){
-    AlterarModo();
-}
+
 
 //Altera as propriedades das variáveis gerais do CSS para alterar a cor da página
-function AlterarModo(){
+function AplicarModo(claroAtivo){
 
-    if (modoClaro){
+    if (claroAtivo){
         root.style.setProperty('--cor-fundo','#000000');
         root.style.setProperty('--cor-elementos', '#262626');
         root.style.setProperty('--cor-hover-botao','#6c6b6b');
@@ -30,5 +27,18 @@ function AlterarModo(){
         alterarModo.title = 'Clique para alterar para o modo escuro';
         modoClaro = true;
     }
+    
     localStorage.setItem('modoClaro', modoClaro);
+}
+
+//Aplica o ultimo modo salvo ao carregar a página
+if(modoSalvo === 'false'){
+    AplicarModo(true);
+}
+else{
+    AplicarModo(false);
+}
+
+function AlterarModo(){
+    AplicarModo(modoClaro);
 }

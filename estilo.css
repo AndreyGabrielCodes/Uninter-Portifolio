@@ -150,8 +150,8 @@ a, a:visited{
 @media (hover: hover){
 
     header #AlterarModo:hover{
-        max-width: 40px;
-        max-height: 40px; 
+        max-width: 45px;
+        max-height: 45px; 
         transition: ease 300ms !important;
     }
 
