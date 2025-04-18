@@ -12,9 +12,13 @@ html, body{
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    background-color:var(--cor-fundo);
+    background-color: var(--cor-fundo);
     font-size: 1.1em;
 }
+
+    body *{
+        transition: ease-in-out 700ms;
+    }
 
     body > header, section, footer {
         background-color: var(--cor-elementos);
@@ -27,29 +31,35 @@ html, body{
         box-shadow: var(--cor-tamanho-shadow) var(--cor-box-shadow);
     }
 
-    body > header, a, section, footer{
-        transition: ease-in-out 700ms;
-    }
-
 header{
-    text-align: left !important;
+    text-align: left;
     padding: 0 !important;
     position: relative;
 }
 
-    header > #PositionFotoAndrey{
-        z-index: 10;
+    header #ContornoFoto{
+        width: 27vh;
+        height: 27vh;
+        border-radius: 50%;
+        background-color: var(--cor-elementos);
+        position: absolute;
+        margin: 7.5% 0 0 1.5%;
+        transition: ease-in-out 300ms !important;
+    }
+
+    header #PositionFotoAndrey{
         margin: 8% 0 0 2%;
         position: absolute;
     }
 
     header #FotoAndrey{
         width: 70%;
-        transition: ease-in-out 300ms;
+        transition: ease-in-out 300ms !important;
     }
 
     header #Wallpaper{
         border-radius: 10px 10px 0 0;
+        width: 100%;
     }    
 
     header #InfoHeader {
@@ -71,10 +81,7 @@ header{
         float: right;
         max-width: 40px;
         max-height: 40px;
-        transition: ease 300ms !important;
     }
-
-    
 
 nav {
     display: flex;
@@ -104,6 +111,10 @@ a, a:visited{
         max-width: 35px;
         max-height: 35px;
     }
+    header #ContornoFoto{
+        width: 23vh;
+        height: 23vh;
+    }
 }
 
 @media only screen and (max-width: 650px){
@@ -116,6 +127,10 @@ a, a:visited{
     header #AlterarModo{
         max-width: 30px;
         max-height: 30px;
+    }
+    header #ContornoFoto{
+        width: 21vh;
+        height: 21vh;
     }
 }
 
@@ -130,8 +145,11 @@ a, a:visited{
         max-width: 27px;
         max-height: 27px;
     }
+    header #ContornoFoto{
+        width: 17.4vh;
+        height: 17.4vh;
+    }
 }
-
 
 @media only screen and (max-width: 450px){ 
     header #FotoAndrey{
@@ -143,6 +161,10 @@ a, a:visited{
     header #AlterarModo{
         max-width: 25px;
         max-height: 25px;
+    }
+    header #ContornoFoto{
+        width: 14.4vh;
+        height: 14.4vh;
     }
 }
 
@@ -188,7 +210,3 @@ a, a:visited{
     #MenuVoltar > a{
         width: 30%;
     }
-
-#Wallpaper{
-    width: 100% 
-}
