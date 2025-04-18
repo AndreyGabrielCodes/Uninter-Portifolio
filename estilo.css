@@ -38,8 +38,8 @@ header{
 }
 
     header #ContornoFoto{
-        width: 27vh;
-        height: 27vh;
+        width: 186px;
+        height: 186px;
         border-radius: 50%;
         background-color: var(--cor-elementos);
         position: absolute;
@@ -112,8 +112,8 @@ a, a:visited{
         max-height: 35px;
     }
     header #ContornoFoto{
-        width: 23vh;
-        height: 23vh;
+        width: 161px;
+        height: 161px;
     }
 }
 
@@ -129,8 +129,8 @@ a, a:visited{
         max-height: 30px;
     }
     header #ContornoFoto{
-        width: 21vh;
-        height: 21vh;
+        width: 148px;
+        height: 148px;
     }
 }
 
@@ -146,8 +146,8 @@ a, a:visited{
         max-height: 27px;
     }
     header #ContornoFoto{
-        width: 17.4vh;
-        height: 17.4vh;
+        width: 121px;
+        height: 121px;
     }
 }
 
@@ -163,8 +163,8 @@ a, a:visited{
         max-height: 25px;
     }
     header #ContornoFoto{
-        width: 14.4vh;
-        height: 14.4vh;
+        width: 96px;
+        height: 96px;
     }
 }
 
