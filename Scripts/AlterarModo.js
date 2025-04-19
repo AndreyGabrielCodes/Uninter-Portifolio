@@ -3,6 +3,21 @@ const alterarModo = document.getElementById("AlterarModo");
 let modoClaro = true;
 let modoSalvo = localStorage.getItem('modoClaro');
 
+//Aplica o ultimo modo salvo ao carregar a página
+if(modoSalvo === 'false'){
+    AplicarModo(true);
+}
+else{
+    AplicarModo(false);
+}
+
+function AlterarModo(){
+    AplicarModo(modoClaro);
+    if (!mensagemFechada){
+        AlterarExibicaoMensagem(false);
+    }
+}
+
 //Altera as propriedades das variáveis gerais do CSS para alterar a cor da página
 function AplicarModo(claroAtivo){
 
@@ -29,16 +44,4 @@ function AplicarModo(claroAtivo){
     }
     
     localStorage.setItem('modoClaro', modoClaro);
-}
-
-//Aplica o ultimo modo salvo ao carregar a página
-if(modoSalvo === 'false'){
-    AplicarModo(true);
-}
-else{
-    AplicarModo(false);
-}
-
-function AlterarModo(){
-    AplicarModo(modoClaro);
 }

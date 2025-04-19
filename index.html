@@ -18,7 +18,16 @@
             </div>
             <img id="Wallpaper" src="images/wallpaper.jpg">
             <div id="InfoHeader">
+                
                 <img id="AlterarModo" class="ImagemButton" onclick="AlterarModo()"src="images/darkModeIcon.png" title="Clique para alterar para o modo escuro">
+                <article id="MensagemAlterarModo">
+                    <img class="FecharMensagem" class="ImagemButton" onclick="AlterarMensagem()"src="images/fecharMensagem.png" title="Clique para fechar a mensagem">
+                    <h1>Aviso!</h1>
+                    <p>
+                        Clique aqui para alterar o modo da página
+                    </p>
+                </article>
+                
                 <div id="NomeDestaque">Andrey Gabriel</div>
                 <div> Suporte Técnico | SQL | .NET</div>
                 <div><i>Uninter Centro Universitário Internacional</i></div>
@@ -147,7 +156,7 @@
                     </span>
                     <span id="ContainerControleForm" class="CampoForm">
                         <article id="MensagemSucesso">
-                            <img id="FecharMensagem" class="ImagemButton" onclick="FecharMensagemSucesso()"src="images/fecharMensagem.png" title="Clique para fechar a mensagem">
+                            <img class="FecharMensagem" class="ImagemButton" onclick="FecharMensagemSucesso()"src="images/fecharMensagem.png" title="Clique para fechar a mensagem">
                             <h1>Obrigado!</h1>
                             <p>
                                 Seus dados foram enviados com sucesso !
@@ -166,6 +175,7 @@
                 Andrey Gabriel - 4731589 - Uninter - 2025
         </footer>
         <script src="scripts/AlterarModo.js"></script>
+        <script src="scripts/AlterarMensagemModo.js"></script>
         <script src="scripts/Formulario.js"></script>
     </body>
 </html>
