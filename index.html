@@ -11,9 +11,6 @@
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
-        <div id="SucessoEnvioFormulario">
-
-        </div>
         <header id="Inicio">
             <div id="ContornoFoto"></div>
             <div id="PositionFotoAndrey" >
@@ -21,7 +18,7 @@
             </div>
             <img id="Wallpaper" src="images/wallpaper.jpg">
             <div id="InfoHeader">
-                <img id="AlterarModo" onclick="AlterarModo()"src="images/darkModeIcon.png" title="Clique para alterar para o modo escuro">
+                <img id="AlterarModo" class="ImagemButton" onclick="AlterarModo()"src="images/darkModeIcon.png" title="Clique para alterar para o modo escuro">
                 <div id="NomeDestaque">Andrey Gabriel</div>
                 <div> Suporte Técnico | SQL | .NET</div>
                 <div><i>Uninter Centro Universitário Internacional</i></div>
@@ -34,7 +31,7 @@
             <a class="BotaoLink" href="#MenuContato"><h4>Contato</h4></a>
         </nav>
         <main>
-            <section id="MenuSobre" class="menu">
+            <section id="MenuSobre">
                 <h2>Sobre mim</h2>
                 <p>
                     Olá, sou Andrey Gabriel, tenho 19 anos e sou proativo e apaixonado por tecnologia, estou em constante aprendizado e desenvolvimento de soluções inovadoras para a web. 
@@ -46,22 +43,22 @@
                     Faço calistenia, gosto de me arriscar em receitas culinárias novas, monto coisas e jogo os games da Lego, sempre estou assistindo algum vídeo tecnico sobre um assunto aleatório porém agora mais focado em automóveis.
                 </p>
             </section> 
-            <section id="MenuEducacao" class="menu">
+            <section id="MenuEducacao">
                 <h2>Educação</2>
                 <p>
 
                 </p>
             </section> 
-            <section id="MenuPortfolio" class="menu">
+            <section id="MenuPortfolio">
                 <h2>Portfolio</h2>
                 <p>
 
                 </p>
             </section> 
-            <section id="MenuContato" class="menu">
+            <section id="MenuContato">
                 <h2>Contato</h2>
                 <p>
-                    Quer entrar em contato ? Insira seus dados e responderei o quanto antes
+                    Quer entrar em contato ? Insira seus dados e retornarei o quanto antes
                 </p>
                 <form id="Formulario"autocomplete="on">
                     <span class="CampoForm">
@@ -97,7 +94,14 @@
                         <input type="file" id="FormArquivo" name="FormArquivo">
                     </span>
                     <span id="ContainerControleForm" class="CampoForm">
-                        <input class="ControleForm" type="submit" value="Enviar">
+                        <article id="MensagemSucesso">
+                            <img id="FecharMensagem" class="ImagemButton" onclick="FecharMensagemSucesso()"src="images/fecharMensagem.png" title="Clique para fechar a mensagem">
+                            <h1>Obrigado!</h1>
+                            <p>
+                                Seus dados foram enviados com sucesso !
+                            </p>
+                        </article>
+                        <input id="submitForm" class="ControleForm" type="submit" value="Enviar">
                         <input class="ControleForm" type="reset" value="Limpar">
                     </span>
                 </form>
@@ -105,7 +109,6 @@
             <div id="MenuVoltar">
                 <a class="BotaoLink" href="#Inicio">Voltar ao inicio</a>
             </div>
-            
         </main>
         <footer>
                 Andrey Gabriel - 4731589 - Uninter - 2025
