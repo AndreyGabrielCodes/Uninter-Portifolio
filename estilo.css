@@ -230,19 +230,29 @@ a, a:visited{
     box-shadow: var(--box-shadow);
 }
 
-.CampoEstudo .InfoCampoEstudo {
-    margin-left: 5%;
+.Link{
+    font-style: italic;
+    text-decoration: underline;
 }
 
-.CampoEstudo img{
+.ContainerInfo .InfoCampo{
+    display: flex;
+    flex-direction: column;
+}
+
+.ContainerInfo .InfoCampo > span{
+    text-align: left;
+}
+
+.ContainerInfo img{
     float: left;
     border-radius: 20%;
-    max-width: 80px;
+    max-width: 12%;
     margin-right: 3%;
     box-shadow: var(--box-shadow);
 }
 
-.CampoEstudo span{
+.ContainerInfo span{
     font-weight: bold;
 }
 
@@ -272,12 +282,18 @@ a, a:visited{
     
     #Formulario input, select{
         height: 30px;
+        transition: none;
         border: none;
     }
 
     #Formulario textarea{
         resize: none;
         border: none;
+    }
+
+    #Formulario input[type="submit"]:active, input[type="reset"]:active {
+        border: 2px solid var(--cor-texto) !important;
+        transition: none;
     }
 
     #Formulario .CampoForm{
@@ -311,7 +327,7 @@ a, a:visited{
     top: -180%;
     padding: 1%;
     border-radius: 10px 10px 10px 0;
-    box-shadow: 2px 2px 7px #13ff00;
+    box-shadow: var(--box-shadow);
     margin: 0;
     text-align: left;
 }
