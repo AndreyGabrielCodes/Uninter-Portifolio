@@ -230,6 +230,22 @@ a, a:visited{
     box-shadow: var(--box-shadow);
 }
 
+.CampoEstudo .InfoCampoEstudo {
+    margin-left: 5%;
+}
+
+.CampoEstudo img{
+    float: left;
+    border-radius: 20%;
+    max-width: 80px;
+    margin-right: 3%;
+    box-shadow: var(--box-shadow);
+}
+
+.CampoEstudo span{
+    font-weight: bold;
+}
+
 #MenuVoltar{
     display: flex;
     justify-content: center;
@@ -256,10 +272,12 @@ a, a:visited{
     
     #Formulario input, select{
         height: 30px;
+        border: none;
     }
 
     #Formulario textarea{
         resize: none;
+        border: none;
     }
 
     #Formulario .CampoForm{
