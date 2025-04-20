@@ -28,7 +28,7 @@ function AplicarModo(claroAtivo){
         root.style.setProperty('--cor-texto','#ffffff');
         root.style.setProperty('--box-shadow','2px 2px 7px #ffffff');
         root.style.setProperty('--cor-input-form','#404040');
-        alterarModo.src = 'images/lightModeIcon.png';
+        alterarModo.src = 'https://andreygabrielcodes.github.io/Uninter-Portifolio/Images/lightModeIcon.png';
         alterarModo.title = 'Clique para alterar para o modo claro';
         modoClaro = false;
     } else{
@@ -38,7 +38,7 @@ function AplicarModo(claroAtivo){
         root.style.setProperty('--cor-texto','#000000');
         root.style.setProperty('--box-shadow','2px 2px 7px #7b7b7b');
         root.style.setProperty('--cor-input-form','#f3f3f3');
-        alterarModo.src = 'images/darkModeIcon.png';
+        alterarModo.src = 'https://andreygabrielcodes.github.io/Uninter-Portifolio/Images/darkModeIcon.png';
         alterarModo.title = 'Clique para alterar para o modo escuro';
         modoClaro = true;
     }
